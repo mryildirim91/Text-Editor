@@ -4,12 +4,12 @@ import java.awt.Component;
 import java.awt.Dimension;
 
 public class ScrollPane extends JScrollPane {
-    final int width = 450;
-    final int height = 450;
+    final int width = 950;
+    final int height = 950;
 
     ScrollPane(Component component){
         super(component);
         super.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
-        this.setPreferredSize(new Dimension(width, height));
+        setPreferredSize(new Dimension(width, height));
     }
 }
